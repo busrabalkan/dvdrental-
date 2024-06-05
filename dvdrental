@@ -1,0 +1,26 @@
+-- 1) film tablosunda bulunan başlık ve açıklama sütunlarındaki verileri sıralayınız.
+Başlığı, açıklamayı SEÇİN
+FİLMDEN ;
+
+-- 2) Film tablosunda bulunan tüm sütunlardaki veriler film uzunluğu (uzunluk) 60 dan büyük VE 75 on küçük olma koşullarıyla sıralayınız.
+SEÇME  *
+FİLMDEN​
+NEREDE uzunluk >  60
+  VE uzunluk <  75 ;
+
+-- 3) film tablosunda bulunan tüm sütunlardaki veriler kiralama_oranı 0,99 VE değiştirme_maliyeti 12,99 VEYA 28,99 olma koşullarıyla sıralayınız.
+SEÇME  *
+FİLMDEN​
+WHERE kiralama_oranı =  0 . 99  VE değiştirme_maliyeti =  12 . 99
+   VEYA değiştirme_maliyeti =  28 . 99 ;
+
+-- 4) müşteri tablosunda bulunan ad sütunundaki değeri 'Mary' olanın son_ad sütunundaki değeri nedir?
+soyadını SEÇ
+müşteriden​
+WHERE ilk_adı =  ' Büşra ' ;
+
+-- 5) film tablosundaki uzunluk(uzunluk) 50 on büyük OLMAYIP aynı zamanda kiralama_oranı değeri 2,99 veya 4,99 OLMAYAN verilerini sıralayınız.
+SEÇME  *
+FİLMDEN​
+WHERE uzunluğu <=  50
+  VE (kiralama_oranı <>  2 , 99  VEYA kiralama_oranı <>  4 , 99 );
